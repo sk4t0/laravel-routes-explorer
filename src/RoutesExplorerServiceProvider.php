@@ -37,7 +37,7 @@ class RoutesExplorerServiceProvider extends ServiceProvider
         if (config('infyom.routes_explorer.enable_explorer')) {
             $this->app['router']->get(
                 config('infyom.routes_explorer.route'),
-                "\\InfyOm\\RoutesExplorer\\RoutesExplorer@showRoutes"
+                "\InfyOm\RoutesExplorer\RoutesExplorer@showRoutes"
             );
         }
     }
